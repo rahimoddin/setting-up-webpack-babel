@@ -76,11 +76,32 @@ Create a .babelrc config file and add following configuration to it.
 const path = require('path');
 
 module.exports = {
+  //entry file
   entry: './src/index.js',
+  //output file and path
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  module: {
+    rules: [
+      {
+        //target all .js files excluding node_modules and
+        // babel-loader used to load js files and transpile them
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
+      }
+    ]
+  },
+  //dev-server to server the content of dist folder on port 9000
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
+  },
+  //watch - canbe passed on cli command as well
+  //watch: true
 };
 
 

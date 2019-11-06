@@ -4,7 +4,8 @@
   "description": "Basic setup for es6 with webpack and babel",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "webpack-dev-server --open",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
