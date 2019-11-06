@@ -108,3 +108,10 @@ module.exports = {
 ````
 
 
+# Get up and running
+
+- checkout the repo: `git clone https://github.com/rahimoddin/setting-up-webpack-babel.git`
+- Install dependencies: `npm install`
+- Run dev-sever: `npm run start:dev` or
+- Simply run webpack: `npm run watch`
+- Happy coding :)
