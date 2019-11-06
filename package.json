@@ -1,0 +1,34 @@
+{
+  "name": "setting-up-webpack-babel",
+  "version": "1.0.0",
+  "description": "Basic setup for es6 with webpack and babel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rahimoddin/setting-up-webpack-babel.git"
+  },
+  "keywords": [
+    "webpack",
+    "babel",
+    "setup",
+    "es6"
+  ],
+  "author": "Rahimoddin Naikwade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rahimoddin/setting-up-webpack-babel/issues"
+  },
+  "homepage": "https://github.com/rahimoddin/setting-up-webpack-babel#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.0",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}

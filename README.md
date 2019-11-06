@@ -3,6 +3,7 @@
 ## Intro
 
 Webpack is a module bundler
+
 Config file: .babelrc
 
 ## Initialize repository
@@ -29,7 +30,7 @@ Config file: .babelrc
 
 ### loaders
 
-`npm install babel-loader`
+`npm install babel-loader --save-dev`
 
 * babel-loader 
 
