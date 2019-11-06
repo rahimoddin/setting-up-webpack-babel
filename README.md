@@ -56,11 +56,59 @@ Used to load file for babel to transpile. Other loaders - style-loader, css-load
 
 # Configure Babel
 
+Create a .babelrc config file and add following configuration to it.
+
+````
+{
+  "presets": [
+    "@babel/preset-env"
+  ]
+}
+
+````
 
 
 # Configure Webpack
 
 
+````
 
+// Imports: Dependencies
+const path = require('path');
+require("babel-register");
+// Webpack Configuration
+const config = {
+  
+  // Entry
+  entry: {'PATH TO YOUR INDEX.JSX FILE'},
+  // Output
+  output: {
+    path: path.resolve(__dirname, 'PATH TO SEND BUNDLED/TRANSPILED CODE'),
+    filename: 'bundle.js',
+  },
+  // Loaders
+  module: {
+    rules : [
+      // JavaScript/JSX Files
+      {
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        use: ['babel-loader'],
+      },
+      // CSS Files
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      }
+    ]
+  },
+  // Plugins
+  plugins: [],
+};
+// Exports
+module.exports = config;
+
+
+````
 
 
