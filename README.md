@@ -73,40 +73,15 @@ Create a .babelrc config file and add following configuration to it.
 
 ````
 
-// Imports: Dependencies
 const path = require('path');
-require("babel-register");
-// Webpack Configuration
-const config = {
-  
-  // Entry
-  entry: {'PATH TO YOUR INDEX.JSX FILE'},
-  // Output
+
+module.exports = {
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'PATH TO SEND BUNDLED/TRANSPILED CODE'),
-    filename: 'bundle.js',
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
   },
-  // Loaders
-  module: {
-    rules : [
-      // JavaScript/JSX Files
-      {
-        test: /\.jsx$/,
-        exclude: /node_modules/,
-        use: ['babel-loader'],
-      },
-      // CSS Files
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-      }
-    ]
-  },
-  // Plugins
-  plugins: [],
 };
-// Exports
-module.exports = config;
 
 
 ````
