@@ -2,9 +2,23 @@
 
 ## Intro
 
-Webpack is a module bundler
+Webpack 
+- a JavaScript compiler*
+- transforms syntax (mainly used to convert ECMAScript 2015+ code into backward compatible version)
+- polyfill features that are missing in target environment (@bable/polyfill)
+- config: .babelrc/babel.config.js/package.json
 
-Config file: .babelrc
+
+Plugins and Presets
+- plugins are small js programs to carry out transformation
+- https://babeljs.io/docs/en/plugins
+- preset acts as an array of plugins
+- determines plugins, polyfills needed for target environment
+- @babel/preset-env - 
+  - smart preset that transforms latest syntax
+  - with a `target` option loads plugins required only
+  - `useBuiltIns` option uses only polyfill required by the target environment 
+- https://babeljs.io/docs/en/babel-preset-react
 
 ## Initialize repository
 
