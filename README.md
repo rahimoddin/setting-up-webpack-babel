@@ -2,7 +2,7 @@
 
 ## Intro
 
-Webpack 
+Babel 
 - a JavaScript compiler*
 - transforms syntax (mainly used to convert ECMAScript 2015+ code into backward compatible version)
 - polyfill features that are missing in target environment (@bable/polyfill)
